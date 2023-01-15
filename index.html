@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Albert Camus' Biography and Work</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      /* Global Styles */
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px auto auto 80px;
+        grid-template-areas:
+        "header"
+        "aside"
+        "nav"
+        "footer";
+      }
+      /* Media Queries */
+      @media (min-width: 768px) {
+        /* Styles for Tablets */
+        .grid-container {
+          grid-template-columns: 300px auto;
+          grid-template-rows: 80px auto auto 80px;
+        }
+        aside {
+          width: 700px;
+        }
+      }
+      @media (min-width: 992px) {
+        /* Styles for Desktops */
+        .grid-container {
+          grid-template-columns: 400px auto;
+        }
+        aside {
+          width: 800px;
+        }
+      }
+      @media (max-width: 767px) {
+        /* Styles for Mobile */
+        .grid-container {
+          grid-template-columns: auto;
+          grid-template-rows: 80px auto auto auto 80px;
+        }
+        aside {
+          width: auto;
+        }
+      }
+      header {
+        grid-area: header;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+      }
+      aside {
+        grid-area: aside; 
+        width: 700px;
+      }
+      nav {
+        grid-area: nav;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 80px;
+      }
+      footer {
+        grid-area: footer;
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 20px;
+      }
+      /* Hide all submenus by default */
+      .submenu {
+        display: none;
+      }
+      /* Show the central menu by default */
+      nav {
+        display: block;
+      }
+      nav ul li {
+        margin-right: 10px;
+      }
+    </style>
+    
+  </head>
+  <body>    
+      <main>
+        <div class="grid-container">
+          <header>
+            <h1>Albert Camus' Biography and Work</h1>
+          </header>
+          <nav>
+            <ul style="list-style-type: none;">
+              <li id="biography"><a href="#biography-content">Biography</a></li>
+              <li id="photos"><a href="#photos-content">Photos</a></li>
+              <li id="works"><a href="#works-content">Works</a></li>
+              <li id="links"><a href="#links-content">Links</a></li>
+              <li id="management"><a href="#management-content">Management</a></li>
+
+            </ul>
+            <aside id="aside-menu">
+              <div class="submenu" id="biography-content">
+                <h2>Biography</h2>
+                <p style="text-align:justify">Albert Camus, (born November 7, 1913, Mondovi, Algeria—died January 4, 1960, near Sens, France)</p>
+                <h3>Early Years</h3>
+                <p style="text-align:justify">Albert Camus was born on 7 November 1913 in a working-class neighbourhood in Mondovi (present-day Dréan), in French Algeria. His mother, Catherine Hélène Camus (née Sintès), was French with Balearic Spanish ancestry. He never knew his father, Lucien Camus, a poor French agricultural worker killed in action while serving with Zouaves, in October 1914, during World War I. Camus, his mother and other relatives lived without many basic material possessions during his childhood in the Belcourt section of Algiers. Camus was a second-generation French inhabitant of Algeria, a French territory from 1830 until 1962. His paternal grandfather, along with many others of his generation, had moved to Algeria for a better life during the first decades of the 19th century. Hence, he was called pied-noir, ''black foot''—a slang term for French people born in Algeria. His identity and poor background had a substantial effect on his later life.[2] Nevertheless, Camus was a French citizen and enjoyed more rights than Arab and Berber Algerians under indigénat.[3] During his childhood, he developed a love for football and swimming.[4]
+                  Under the influence of his teacher Louis Germain, Camus gained a scholarship in 1924 to continue his studies at a prestigious lyceum (secondary school) near Algiers.[5] In 1930, at the age of 17, he was diagnosed with tuberculosis.[4] Because it is a transmitted disease, he moved out of his home and stayed with his uncle Gustave Acault, a butcher, who influenced the young Camus. It was at that time he turned to philosophy, with the mentoring of his philosophy teacher Jean Grenier. He was impressed by ancient Greek philosophers and Friedrich Nietzsche.[4] During that time, he was only able to study part-time. To earn money, he took odd jobs: as a private tutor, car parts clerk, and assistant at the Meteorological Institute.[6]                  
+                  In 1933, Camus enrolled at the University of Algiers and completed his licence de philosophie (BA) in 1936; after presenting his thesis on Plotinus.[7] Camus developed an interest in early Christian philosophers, but Nietzsche and Arthur Schopenhauer had paved the way towards pessimism and atheism. Camus also studied novelist-philosophers such as Stendhal, Herman Melville, Fyodor Dostoyevsky, and Franz Kafka.[8] In 1933, he also met Simone Hié, then a partner of a friend of Camus, who would become his first wife.[6]                  
+                  Camus played goalkeeper for the Racing Universitaire d'Alger junior team from 1928 to 1930.[9] The sense of team spirit, fraternity, and common purpose appealed to him enormously.[10] In match reports, he was often praised for playing with passion and courage. Any football ambitions, however, disappeared when he contracted tuberculosis.[9] Camus drew parallels among football, human existence, morality, and personal identity. For him, the simplistic morality of football contradicted the complicated morality imposed by authorities such as the state and Church.[9]</p>
+                <h3>Formative years</h3>
+                <p style="text-align:justify">In 1934, aged 20, Camus was in a relationship with Simone Hié.[11] Simone had an addiction to morphine, a drug she used to ease her menstrual pains. His uncle Gustave did not approve of the relationship, but Camus married Hié to help her fight her addiction. He subsequently discovered she was in a relationship with her doctor at the same time and the couple later divorced.[6]
+                  Camus joined the French Communist Party (PCF) in early 1935. He saw it as a way to "fight inequalities between Europeans and 'natives' in Algeria," even though he was not a Marxist. He explained: "We might see communism as a springboard and asceticism that prepares the ground for more spiritual activities." Camus left the PCF a year later.[12] In 1936, the independence-minded Algerian Communist Party (PCA) was founded, and Camus joined it after his mentor Grenier advised him to do so. Camus's main role within the PCA was to organise the Théâtre du Travail ("Workers' Theatre"). Camus was also close to the Parti du Peuple Algérien (Algerian People's Party (PPA)), which was a moderate anti-colonialist/nationalist party. As tensions in the interwar period escalated, the Stalinist PCA and PPA broke ties. Camus was expelled from the PCA for refusing to toe the party line. This series of events sharpened his belief in human dignity. Camus's mistrust of bureaucracies that aimed for efficiency instead of justice grew. He continued his involvement with theatre and renamed his group Théâtre de l'Equipe ("Theatre of the Team"). Some of his scripts were the basis for his later novels.[13]                  
+                  In 1938, Camus began working for the leftist newspaper Alger républicain (founded by Pascal Pia) as he had strong anti-fascist feelings, and the rise of fascist regimes in Europe was worrying him. By then, Camus had developed strong feelings against authoritative colonialism as he witnessed the harsh treatment of the Arabs and Berbers by French authorities. Alger républicain was banned in 1940 and Camus flew to Paris to take a new job at Paris-Soir as editor-in-chief. In Paris, he almost completed his "first cycle" of works dealing with the absurd and the meaningless—the novel L'Étranger (The Outsider (UK), or The Stranger (US)), the philosophical essay Le Mythe de Sisyphe (The Myth of Sisyphus) and the play Caligula. Each cycle consisted of a novel, an essay and a theatrical play.[14]</p>
+                <h3>Legacy</h3>
+                <p>
+                  As novelist and playwright, moralist and political theorist, Albert Camus after World War II became the spokesman of his own generation and the mentor of the next, not only in France but also in Europe and eventually the world. His writings, which addressed themselves mainly to the isolation of man in an alien universe, the estrangement of the individual from himself, the problem of evil, and the pressing finality of death, accurately reflected the alienation and disillusionment of the postwar intellectual. He is remembered, with Sartre, as a leading practitioner of the existential novel. Though he understood the nihilism of many of his contemporaries, Camus also argued the necessity of defending such values as truth, moderation, and justice. In his last works he sketched the outlines of a liberal humanism that rejected the dogmatic aspects of both Christianity and Marxism.
+                </p>
+                <h3>Death</h3>
+                <p>
+                  Camus died on 4 January 1960 at the age of 46, in a car accident near Sens, in Le Grand Fossard in the small town of Villeblevin. He had spent the New Year's holiday of 1960 at his house in Lourmarin, Vaucluse with his family, and his publisher Michel Gallimard of Éditions Gallimard, along with Gallimard's wife, Janine, and daughter. Camus's wife and children went back to Paris by train on 2 January, but Camus decided to return in Gallimard's luxurious Facel Vega FVS. The car crashed into a plane tree on a long straight stretch of the Route nationale 5 (now the RN 6 or D606). Camus, who was in the passenger seat, died instantly.[34] Gallimard died a few days later, although his wife and daughter were unharmed.
+                  144 pages of a handwritten manuscript entitled Le premier Homme (The First Man) were found in the wreckage. Camus had predicted that this unfinished novel based on his childhood in Algeria would be his finest work.[20] Camus was buried in the Lourmarin Cemetery, Vaucluse, France, where he had lived.[35] His friend Sartre read a eulogy, paying tribute to Camus's heroic "stubborn humanism".[36] William Faulkner wrote his obituary, saying, "When the door shut for him he had already written on this side of it that which every artist who also carries through life with him that one same foreknowledge and hatred of death, is hoping to do: I was here."[37]
+                </p>
+              </div>
+              <div class="submenu" id="photos-content">
+                <h2>Photos</h2>
+                <ul>
+                  <li><a href="#photo-gallery">Photo Gallery</a>
+                    <img src="Camus3.jpg" alt="Gallery of photos of the writer" style="width: 150px;">
+                    <img src="writer.jpg" alt="Gallery of photos of the writer" style="width: 200px">
+                  </li>
+                  <li><a href="#photo-book">Photo Book</a>
+                    <img src="L'Étranger_(Albert_Camus).jpg" alt="Gallery of photos of the writer" style="width: 150px;">
+                    <img src="writer2.jpg" alt="Gallery of photos of the writer" style="width: 150px;">
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu" id="works-content">
+                <h2>Works</h2>
+                <ul>
+                  <li><a href="#books">Books</a>
+                    <p style="text-align:justify">
+                       1.The Stranger<br>
+                       2.The Myth of Sisyphus<br>
+                       3.Sukhi Mrityu<br>
+                       4.The Plague<br>
+                       5.The Rebel<br>
+                    </p>
+                  </li>
+                  <li><a href="#articles">Articles</a>
+                    <p style="text-align:justify">
+                      1.The New Yorker<br>
+                      2.The School Of Life<br>
+                      3.The Atlantic<br>
+                    </p>
+                  </li>
+                  <li><a href="#plays">Plays</a>
+                    <p style="text-align:justify">
+                      1.Caligula<br>
+                      2.The Just Assassins<br>
+                      3.The Misunderstanding<br>           
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu" id="links-content">
+                <h2>Links</h2>
+                <ul>
+                  <li><a href="#official-website">Official Website</a>
+                    <a href="https://plato.stanford.edu/entries/camus/" style="color: greenyellow;"> click here</a>
+                  </li>
+                  <li><a href="#wikipedia-page">Wikipedia Page</a>
+                    <a href="https://en.wikipedia.org/wiki/Albert_Camus" style="color: greenyellow;"> click here</a>
+                  </li>
+                  <li><a href="#online-books">Online Books</a>
+                    <a href="https://openlibrary.org/authors/OL124171A/Albert_Camus" style="color: greenyellow;"> click here</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu" id="management-content">
+                <h2>Management</h2>
+                <ul>
+                  <li><a href="#connection">connection</a>
+                  </li>
+                  <li><a href="#diconection">diconection</a>
+                  </li>
+                  <li><a href="#works' management">works' management</a>
+                  </li>
+                  <li><a href="#links' management">links' management</a>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+          </nav>
+        </div>
+      </main>
+      <script>
+        function displayContent(event) {
+          event.preventDefault();
+          var submenuId = event.target.getAttribute("href").slice(1);
+          var submenuContent = document.getElementById(submenuId);
+          var allSubmenus = document.querySelectorAll(".submenu");
+    
+          // hide all submenus
+          allSubmenus.forEach(function(submenu) {
+            submenu.style.display = "none";
+          });
+    
+          if(submenuId === "photos-content") {
+            var images = submenuContent.querySelectorAll("img");
+            images.forEach(function(img) {
+                img.style.display = "block";
+            });
+          }
+    
+          // display the selected submenu content
+          submenuContent.style.display = "block";
+        }
+    
+        // add event listeners to the submenu links
+        var submenuLinks = document.querySelectorAll("li > a");
+        submenuLinks.forEach(function(link) {
+          link.addEventListener("click", displayContent);
+        });
+      </script>
+    
+    </body>
+  </html>
+
+
